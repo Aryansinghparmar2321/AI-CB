@@ -1,0 +1,97 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good afternoon", "is anyone there", "hi there"],
+      "responses": [
+        "Hello! Welcome to support — how can I help you today?",
+        "Hi there! What can I do for you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you later", "thanks bye", "that's all", "close chat"],
+      "responses": [
+        "Goodbye! Have a great day.",
+        "Thanks for reaching out — take care!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "thats helpful", "appreciate it", "thanks a lot"],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!"
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "where is my order", "track my order", "order status", "has my order shipped",
+        "when will my package arrive", "track package", "order not arrived"
+      ],
+      "responses": [
+        "I can help with that. Could you share your order number so I can look it up?",
+        "Sure — please provide your order ID and I'll check the shipping status."
+      ]
+    },
+    {
+      "tag": "refund",
+      "patterns": [
+        "i want a refund", "how do i get a refund", "refund policy", "money back",
+        "return my item", "cancel my order", "how to return a product"
+      ],
+      "responses": [
+        "Our refund policy allows returns within 30 days of purchase with a receipt. Would you like me to start a refund request?",
+        "I can help you begin a return. Do you have the order number handy?"
+      ]
+    },
+    {
+      "tag": "shipping",
+      "patterns": [
+        "shipping cost", "how much is shipping", "delivery time", "how long does shipping take",
+        "do you ship internationally", "shipping options"
+      ],
+      "responses": [
+        "Standard shipping takes 3-5 business days and is free on orders over $50. Express shipping (1-2 days) is also available at checkout.",
+        "We ship domestically and internationally. Delivery time depends on your location, typically 3-10 business days."
+      ]
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "what are your hours", "when are you open", "business hours", "support hours",
+        "are you open now", "customer service hours"
+      ],
+      "responses": [
+        "Our support team is available Monday-Friday, 9 AM to 6 PM EST.",
+        "We're open weekdays from 9 AM to 6 PM EST. This chatbot, though, is here 24/7!"
+      ]
+    },
+    {
+      "tag": "complaint",
+      "patterns": [
+        "this is unacceptable", "i want to speak to a manager", "i am very unhappy",
+        "your product is broken", "terrible service", "i have a complaint"
+      ],
+      "responses": [
+        "I'm sorry to hear that. I'd like to help make this right — could you describe what happened?",
+        "That's not the experience we want for you. Let me connect you with a specialist, or tell me more here and I'll do my best to help."
+      ]
+    },
+    {
+      "tag": "payment",
+      "patterns": [
+        "payment methods", "do you accept paypal", "can i pay with credit card",
+        "payment failed", "billing issue", "i was charged twice"
+      ],
+      "responses": [
+        "We accept Visa, MasterCard, American Express, and PayPal. If you were charged incorrectly, I can escalate a billing review — could you share the order number?"
+      ]
+    }
+  ],
+  "fallback_responses": [
+    "I'm not quite sure I understood that. Could you rephrase, or ask about orders, refunds, shipping, or billing?",
+    "Sorry, I didn't catch that. I can help with order tracking, returns, shipping, or account questions — what do you need?"
+  ]
+}
