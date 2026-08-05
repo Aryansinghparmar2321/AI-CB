@@ -1,34 +1,3 @@
-"""
-Customer Service Chatbot
-=========================
-A hybrid rule-based / simple-NLP chatbot for answering basic customer
-support queries (order status, refunds, shipping, hours, billing, etc.)
-
-How it works
-------------
-1. RULE-BASED LAYER (fast path):
-   Checks the user's message for exact keyword/phrase matches against
-   known patterns in intents.json. If a clear match is found, respond
-   immediately.
-
-2. SIMPLE NLP LAYER (fuzzy path):
-   If no exact keyword match is found, the message is compared against
-   every known pattern using TF-IDF vectorization + cosine similarity.
-   This lets the bot understand rephrased or slightly different wording
-   ("when's my stuff coming" ~ "where is my order") without needing an
-   exact keyword hit.
-
-3. FALLBACK:
-   If similarity is too low to be confident, the bot admits it doesn't
-   understand and asks the user to rephrase or points them to topics
-   it can help with.
-
-This design is intentionally lightweight (no external API / no LLM),
-which is exactly the "rule-based or simple NLP-based chatbot" the brief
-asks for, while still demonstrating real NLP techniques (vectorization,
-similarity scoring) that intern reviewers like to see explained.
-"""
-
 import json
 import re
 import string
