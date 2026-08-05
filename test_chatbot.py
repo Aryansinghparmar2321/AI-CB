@@ -1,9 +1,3 @@
-"""
-Quick automated demo — runs a handful of sample messages through the
-bot and prints the responses, so you can see it work without typing
-interactively. Run the real thing with: python chatbot.py
-"""
-
 from chatbot import CustomerServiceChatbot
 
 bot = CustomerServiceChatbot(intents_path="intents.json")
